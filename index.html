@@ -1,0 +1,187 @@
+<html>
+
+<head>
+  <title>Movies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#80b3ff;
+      color: #80b3ff;
+      font-size: 1.1em;
+      line-height: 1.5;
+      text-align: center;
+      background-image: cross-fade();
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 1em 0;
+    }
+    p {
+      margin: 0;
+      padding: 1em 0;
+    }
+    #showcase {
+      min-height: 450px;
+      color: rgb(16, 24, 26);
+      text-align: center;
+    }
+    #showcase .bg-image {
+      position: absolute;
+      background: #c481c4;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 450px;
+      z-index: -1;
+    }
+
+    #showcase h1 {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    #showcase .content-wrap,
+    #section-a .content-wrap {
+      padding: 0 1.5em;
+    }
+
+    #section-a {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding-bottom: 2em;
+    }
+
+    #section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #section-b li {
+      background: rgb(177, 164, 164);
+      color: rgba(63, 33, 46, 0.904);
+    }
+
+    #section-c {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding: 2em;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+      }
+
+      #section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+      }
+
+      #section-a .content-text p {
+        padding-top: 0;
+      }
+
+      .content-wrap,
+      #section-b ul {
+        grid-column: 2/4;
+      }
+
+      .box,
+      #main-footer div {
+        grid-column: span 2;
+      }
+
+      #section-b ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #section-b li {
+        width: 31%;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Best sci-fi movies of all time</h1>
+      <p> <ul>
+          <li>Today we will see Top 3 scifi movies of all time--</li>
+          <li>Before that we will see what do you mean by Sci-fi movie.</li>
+          </ul>
+      </p>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">About Sci-Fi Movies</h2>
+        <div class="content-text">
+          <p>Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies. Science fiction films have often been used to focus on political or social issues, and to explore philosophical issues like the human condition.
+
+        </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-b" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="images/i1.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">1. Interstellar</h3>
+              <p> Interstellar is a 2014 American-British epic science fiction film directed and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, John Lithgow, Michael Caine, and Matt Damon. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="images/i2.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">2. Star Wars</h3>
+              <p>Star Wars (retroactively titled Star Wars: Episode IV – A New Hope) is a 1977 American epic space-opera film written and directed by George Lucas, produced by Lucasfilm and distributed by 20th Century Fox. It stars Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing, Alec Guinness, David Prowse, James Earl Jones, Anthony Daniels, Kenny Baker and Peter Mayhew. It is the first installment of the original Star Wars trilogy, the first of the franchise to be produced, and the fourth episode of the "Skywalker saga".</div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="images/i3.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">3. Inception</h3>
+              <p>Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with his wife, Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious.[7] The ensemble cast includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Elliot Page,[a] Tom Hardy, Dileep Rao, Cillian Murphy, Tom Berenger, and Michael Caine. </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Designed By Chirag Thetha</h2>
+
+      </div>
+    </section>
+
+</body>
+
+</html>
